@@ -1,0 +1,74 @@
+***Work***
+make a branch of what you want in bitbucket
+
+create a repo folder in local // similar to workspace
+
+--fetch code from bitbucket // getting latest
+
+///
+git clone <url>
+///
+
+--code is downloaded to local folder
+
+--check status: tells about current branch and pending changes
+
+///
+git status
+///
+
+-- change to working branch
+
+///
+git branch <branch_name>
+///
+
+--checkout branch to make changes
+
+///
+git checkout <branch_name>
+///
+
+--make changes to files directly in the folder and try git status again.. should show pending changes
+
+--move the changes to staging area, file by file
+
+///
+git add <file_name>
+///
+
+--maybe do a git status to check if all files are added for staging
+
+--commit changes to git
+
+///
+git commit -m "commit message here"
+///
+
+--push changes to bitbucket
+
+///
+git push origin <branch_name>
+///
+
+
+--switch to master and checkout
+///
+git checkout main
+git status
+///
+
+--merge branch to main
+///
+git merge <branch_name>
+///
+
+--push changes to bitbucket
+///
+git push origin main
+///
+
+--delete branch
+///
+git branch -d <branch_name>
+///
